@@ -8,7 +8,7 @@ const EmployersList = ({data, onDelete, onToggleProp}) => {
             <EmployersListItem 
                 key={id} 
                 {...itemProps}
-                onDelete={() => onDelete (id)}
+                onDelete={() => onDelete(id)}
                 onToggleProp={(e) => onToggleProp(id, e.currentTarget.getAttribute('data-toggle'))}/>
         )
     })
@@ -18,7 +18,7 @@ const EmployersList = ({data, onDelete, onToggleProp}) => {
             {elements}
         </ul>
     )
-
 }
+
 
 export default EmployersList;
